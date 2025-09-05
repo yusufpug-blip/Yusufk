@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Yusuf & Gül 💖</title>
+  <style>
+    body {
+      background: #1a1a2e;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+      margin-top: 150px;
+    }
+    h1 { color: pink; }
+    input, button {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      background: hotpink;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Yusuf 💕 Gül</h1>
+  <p>Bu özel aşk sayfasına girmek için şifreni yaz ✨</p>
+  <input type="password" id="pass" placeholder="Şifre">
+  <button onclick="checkPass()">Aç</button>
+
+  <div id="icerik" style="display:none; margin-top:20px;">
+    <h2>Canım Gül 💖</h2>
+    <p>Seninle tanıştığım gün hayatımın en güzel günü oldu...</p>
+  </div>
+
+  <script>
+    function checkPass() {
+      let sifre = document.getElementById("pass").value;
+      if(sifre === "2024"){ // şifre buraya
+        document.getElementById("icerik").style.display = "block";
+      } else {
+        alert("Yanlış şifre 😘");
+      }
+    }
+  </script>
+</body>
+</html>
